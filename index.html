@@ -3,36 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Para Yuli 🌻 - De Mindfreak87</title>
+<title>Para Yuli 🌻 - Mindfreak87</title>
 <style>
-  body { background:#fff8dc; display:flex; justify-content:center; align-items:center; min-height:100vh; font-family:'Segoe UI', sans-serif; margin:0; }
-  .card { background:white; padding:40px 28px; border-radius:28px; text-align:center; max-width:360px; box-shadow:0 15px 40px rgba(0,0,0,0.12); }
-  h1 { color:#7a4a20; margin:0 0 10px 0; font-size:34px; }
-  .flower { font-size:110px; animation: bloom 1.8s ease-in-out infinite alternate; display:inline-block; }
-  @keyframes bloom { from{transform:scale(0.85) rotate(-5deg)} to{transform:scale(1.15) rotate(5deg)} }
-  p { color:#7a4a20; line-height:1.6; font-size:17px; margin:15px 0; }
-  .btn { background:#ffde7a; border:none; padding:14px 35px; border-radius:25px; color:#7a4a20; font-weight:bold; font-size:16px; margin-top:20px; cursor:pointer; }
-  .foot { font-size:13px; color:#b89a7a; margin-top:20px; }
-  .author { font-size:12px; color:#999; margin-top:6px; letter-spacing:1px; }
+  body{margin:0;background:#000;height:100vh;display:flex;justify-content:center;align-items:center;font-family:sans-serif;overflow:hidden}
+  #p1, #p2{position:absolute;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+  #p1{background:#fff9c4;color:#5d4037}
+  #p2{background:#000;color:#ffeb3b;display:none}
+  h1{font-size:34px} .btn{background:#ffeb3b;border:none;padding:16px 40px;border-radius:30px;font-weight:bold;font-size:19px;cursor:pointer;box-shadow:0 0 25px #ffeb3b;margin-top:20px}
+  .flower{font-size:130px;animation:b 1.5s infinite alternate} @keyframes b{from{transform:scale(.8)}to{transform:scale(1.2)}}
+  p{color:white;font-size:18px;max-width:330px;line-height:1.6} .foot{font-size:11px;color:#666;margin-top:15px}
 </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Para Yuli 🌻</h1>
-    <div class="flower">🌼</div>
-    <p>Un pequeño detalle amarillo para alegrarte el día. Porque hay personas que merecen un poquito de luz, incluso en un día cualquiera. 💛</p>
-    <p>🌻 ✨ 💛</p>
-    <button class="btn" onclick="document.getElementById('musica').play();">🌻 Toca aquí 🌻</button>
-    <div class="foot">Hecho especialmente para Yuli</div>
-    <div class="author">— Mindfreak87 —</div>
-  </div>
-
-  <audio id="musica" loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-  </audio>
-  <script>
-    // Reemplaza el link de arriba por la canción Flores Amarillas si la tienes en mp3
-    // La música empezará cuando ella toque el botón
-  </script>
+<div id="p1">
+  <h1>Para Yuli 🌻</h1>
+  <p style="color:#5d4037">Tengo un detalle para mi amor 💛</p>
+  <div style="font-size:70px">💌</div>
+  <button class="btn" onclick="abrir()">Toca aquí gordita ✨</button>
+  <div class="foot">— Mindfreak87 —</div>
+</div>
+<div id="p2">
+  <h1>Para Yuli 🌻</h1>
+  <div class="flower">🌻</div>
+  <p>Un pequeño detalle amarillo para mi amor porque hay personas que merecen un poquito de luz incluso un día cualquiera, te amo gordita. 💛</p>
+  <div class="foot">Hecho especialmente para Yuli — Mindfreak87</div>
+  <iframe id="yt" style="display:none" width="0" height="0" src="" allow="autoplay"></iframe>
+</div>
+<audio id="musica" loop><source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73467.mp3?filename=flores-amarillas-floricienta-piano-112199.mp3" type="audio/mpeg"></audio>
+<script>
+function abrir(){
+  document.getElementById('p1').style.display='none';
+  document.getElementById('p2').style.display='flex';
+  document.getElementById('musica').play();
+  document.getElementById('yt').src="https://www.youtube.com/embed/c4r3mGs8a1w?autoplay=1&loop=1&playlist=c4r3mGs8a1w";
+}
+</script>
 </body>
 </html>
