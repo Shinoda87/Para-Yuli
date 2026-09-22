@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Yuli 🌻 - De Mindfreak87</title>
+<style>
+  body { background:#fff8dc; display:flex; justify-content:center; align-items:center; min-height:100vh; font-family:'Segoe UI', sans-serif; margin:0; }
+  .card { background:white; padding:40px 28px; border-radius:28px; text-align:center; max-width:360px; box-shadow:0 15px 40px rgba(0,0,0,0.12); }
+  h1 { color:#7a4a20; margin:0 0 10px 0; font-size:34px; }
+  .flower { font-size:110px; animation: bloom 1.8s ease-in-out infinite alternate; display:inline-block; }
+  @keyframes bloom { from{transform:scale(0.85) rotate(-5deg)} to{transform:scale(1.15) rotate(5deg)} }
+  p { color:#7a4a20; line-height:1.6; font-size:17px; margin:15px 0; }
+  .btn { background:#ffde7a; border:none; padding:14px 35px; border-radius:25px; color:#7a4a20; font-weight:bold; font-size:16px; margin-top:20px; cursor:pointer; }
+  .foot { font-size:13px; color:#b89a7a; margin-top:20px; }
+  .author { font-size:12px; color:#999; margin-top:6px; letter-spacing:1px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Para Yuli 🌻</h1>
+    <div class="flower">🌼</div>
+    <p>Un pequeño detalle amarillo para alegrarte el día. Porque hay personas que merecen un poquito de luz, incluso en un día cualquiera. 💛</p>
+    <p>🌻 ✨ 💛</p>
+    <button class="btn" onclick="document.getElementById('musica').play();">🌻 Toca aquí 🌻</button>
+    <div class="foot">Hecho especialmente para Yuli</div>
+    <div class="author">— Mindfreak87 —</div>
+  </div>
+
+  <audio id="musica" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    // Reemplaza el link de arriba por la canción Flores Amarillas si la tienes en mp3
+    // La música empezará cuando ella toque el botón
+  </script>
+</body>
+</html>
